@@ -109,7 +109,7 @@
                     <td>{{$blog->date}}</td>
                     <td>{{$blog->author}}</td>
                     <td>{{$blog->content}}</td>
-                    <td><img src="../images{{$blog->image}}" alt="{{$blog->name}}" width="100"></td>
+                    <td><img src="../images{{$blog->image}}" alt="{{$blog->name}}" alt="" width="100"></td>
                     <td class="d-flex justify-content-center gap-3">
                         <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" class="delete-form">
                             @csrf
